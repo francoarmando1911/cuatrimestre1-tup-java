@@ -5,7 +5,7 @@ package guia10For;
 
 import java.util.Scanner;
 
-public class ejercicio2 {
+public class Ejercicio2 {
     public void arbol(int nivel){
         for(int i=1; i<= nivel; i++){
             String espacios = "".repeat(nivel-i);
@@ -19,7 +19,7 @@ public class ejercicio2 {
         System.out.println("Ingrese la cantidad de niveles que desea que tenga el arbol: ");
         int nivel = entrada.nextInt();
 
-        ejercicio2 arbol = new ejercicio2(); //creo una instancia de la funcion (cosas de java....)
+        Ejercicio2 arbol = new Ejercicio2(); //creo una instancia de la funcion (cosas de java....)
         arbol.arbol(nivel);
 
     }

@@ -3,7 +3,7 @@ package guia10For;
 import java.util.Scanner;
 
 // // Codificar un algoritmo que muestra una cuenta regresiva de 10 segundos.
-public class ejercicio3 {
+public class Ejercicio3 {
 
     public static void cuentaRegresiva(int segundos){
         for(int i = segundos; i>= 0; i--){
