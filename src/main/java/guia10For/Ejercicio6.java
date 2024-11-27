@@ -18,12 +18,10 @@ public class Ejercicio6 {
         while (true) {
             int categoria = scanner.nextInt();
 
-            // Comprobamos si el usuario quiere salir
             if (categoria == 0) {
                 break;
             }
 
-            // Incrementar contadores basados en la categoria ingresada
             switch (categoria) {
                 case 1:
                     contadorCategoria1++;
@@ -40,7 +38,6 @@ public class Ejercicio6 {
             }
         }
 
-        // Salida de resultados
         System.out.println("Respuestas por categoría:");
         System.out.println("Categoría 1: " + contadorCategoria1);
         System.out.println("Categoría 2: " + contadorCategoria2);
