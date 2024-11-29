@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 // Crear un pseudocódigo que le permita ingresar todos los números que desee y calcular u sumatoria. Establezca una opción de salida.
-public class ejercicio1 {
+public class Ejercicio1 {
 
  public static int calcularSuma(ArrayList<Integer> numeros){
   int suma = 0;
