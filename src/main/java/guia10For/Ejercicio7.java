@@ -6,13 +6,33 @@ positivos o negativos. Al finalizar, mostrar la sumatoria de los números negati
 los positivos.
 */
 
+import java.util.Scanner;
+
 public class Ejercicio7 {
 
-    int sumaNegativos = 0;
-    int sumaPositivos = 0;
-    int contadorPositivos = 0;
+    public static void main(String[] args) {
+        int sumaNegativos = 0;
+        int sumaPositivos = 0;
+        int contadorPositivos = 0;
 
-    for(int i = 0; i <= 6; i++){
+        Scanner entrada = new Scanner(System.in);
 
+        for(int i = 0; i <= 6; i++){
+            System.out.println("Ingrese el numero: ");
+            int numero = entrada.nextInt();
+
+            if(numero<0){
+                sumaNegativos += numero;
+            } else{
+                sumaPositivos += numero;
+                contadorPositivos++;
+            }
+        }
+
+        double promediosPositivos = (contadorPositivos > 0) ? (sumaPositivos / contadorPositivos) : 0;
+
+        System.out.println("La sumatoria de los numeros negativos es: " + sumaNegativos);
+        System.out.println("El promedio de los numeros positivos es: " + promediosPositivos);
     }
+
 }
