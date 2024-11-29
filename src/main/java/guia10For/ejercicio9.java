@@ -14,15 +14,16 @@ public class ejercicio9 {
 
         System.out.println("Ingrese una palabra en minuscula: ");
         String palabra = entrada.next();
-        int contadorVocales;
+        int contadorVocales = 0;
 
         for(int i = 0; i < palabra.length(); i++){
-            String letra = palabra[i];
-            if(letra == 'a' or letra == 'e' or letra == "i" or letra == "o" or letra == "u"){
+            char letra = palabra.charAt(i);
+            if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
                 contadorVocales++;
             }
         }
 
         System.out.println("La palabra tiene: " + contadorVocales + " vocales.");
+        entrada.close();
     }
 }
