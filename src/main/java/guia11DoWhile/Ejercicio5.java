@@ -6,5 +6,14 @@ palabra. Establezca una opción para finalizar el ingreso de palabras. No consid
 palabra que utiliza para finalizar para el conteo de palabras ni ningún otro requerimiento.
 */
 
+import java.util.Scanner;
+
 public class Ejercicio5 {
+
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+
+    }
 }
