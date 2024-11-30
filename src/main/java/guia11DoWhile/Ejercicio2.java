@@ -16,9 +16,12 @@ public class Ejercicio2 {
         int inicio = Math.min(numero1, numero2);
         int fin = Math.max(numero1, numero2);
 
+        int suma = 0;
+
         for(int i = inicio; i <= fin; i++){
-            int suma = 0;
             suma += i;
         }
+
+        System.out.println("La suma de los numeros enteros entre: " + numero1 + " y " + numero2 + " es: " + suma);
     }
 }
