@@ -1,5 +1,6 @@
 package guia11DoWhile;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
@@ -11,9 +12,17 @@ productos se produce cuando se ingresa precio 0.
 */
 public class Ejercicio4 {
 
+    public static void calcularTotalConDescuento(ArrayList<String> productos){
+        int total = 0;
+
+
+    }
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+
+        int totalCompra = 0;
+        ArrayList<String> productos = new ArrayList<>(); //lista de productos
 
     }
 }
