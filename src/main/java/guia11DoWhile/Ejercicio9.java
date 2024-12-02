@@ -39,19 +39,28 @@ public class Ejercicio9 {
         do {
             System.out.println("Ingrese una palabra o FIN para finalizar: ");
             String palabra = entrada.next();
-            contadorPalabras++;
+
+            if (palabra.equalsIgnoreCase("FIN")) {
+                break;
+            }
+
             palabra.toLowerCase(Locale.ROOT);
 
             for(int i = 0; i < palabra.length(); i++){
                 char caracter = palabra.charAt(i);
 
                 if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u'){
-                    System.out.println("Es una vocal.");
                     contadorVocales ++;
                 }
+
+                System.out.println("La palabra '" + palabra + "' tiene: " + contadorVocales + " vocales.");
+                contadorPalabras++;
             }
 
+        } while (true);
 
-        } while (!palabra.equalsIgnoreCase("FIN"));
+        System.out.println("El número de palabras ingresadas es: " + contadorPalabras);
+
     }
+
 }
