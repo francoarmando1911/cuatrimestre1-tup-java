@@ -42,6 +42,8 @@ import java.util.Scanner;
 public class Ejercicio8 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        int intentos = 0;
+        int resultado = 0;
 
         while (true){
 
@@ -66,18 +68,22 @@ public class Ejercicio8 {
                 System.out.println("Ingrese una opcion: 1 - TIRAR DADO | 2- SALIR");
                 int opcionJuego = entrada.nextInt();
 
-                if(opcionJuego == 2){
-                    System.out.println("Saliendo del juego");
-                } else if (opcionJuego == 1){
-                    int intentos = 0;
-                    int resultado = 0;
+                while (opcionJuego == 1) {
 
                     int numeroDado = (int) (Math.random() * 6) + 1;
                     System.out.println("Resultado del dado: " + numeroDado);
                     intentos++;
 
+                    if (resultado == 4) {
+                        System.out.println("¡Salió el 4 después de " + intentos + " intentos!");
+                        break;
+                    }
 
+                    System.out.println("Presione 1 para intentar de nuevo o 0 para salir: ");
+                    opcionJuego = entrada.nextInt();
                 }
+
+
 
             }
         }
