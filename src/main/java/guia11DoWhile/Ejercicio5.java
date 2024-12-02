@@ -14,6 +14,25 @@ public class Ejercicio5 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
+        int contadorPalabras = 0;
+        String palabra = "";
+        String palabraMasLarga = "";
+
+        do {
+            System.out.println("Ingrese una palabra o escriba FIN para finalizar: ");
+            palabra = entrada.next();
+
+            if(palabra.toLowerCase().equals("FIN")){
+                contadorPalabras ++;
+            }
+            if(palabra.length() > palabraMasLarga.length()){
+                palabraMasLarga.equals(palabra);
+            }
+        } while (palabra != "FIN");
+
+        System.out.println("Cantidad de palabras ingresadas: " + contadorPalabras);
+        System.out.println("La palabra mas larga es: " + palabraMasLarga);
+
 
     }
 }
