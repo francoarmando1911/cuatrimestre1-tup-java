@@ -45,12 +45,15 @@ public class Ejercicio4 {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Ingrese el precio por litro: ");
-        double precio = entrada.nextInt();
+        double precio = entrada.nextDouble();
         System.out.println("Ingrese la cantidad de litros comprados: ");
-        double litros = entrada.nextInt();
+        double litros = entrada.nextDouble();
 
         double resultado = precioFinal(litros, precio);
-        System.out.println("El precio final por litro es: $" + resultado);
+        double montoTotal = resultado * litros;
+
+        System.out.println("El precio final por litro es: $" + montoTotal);
+
 
     }
 }
