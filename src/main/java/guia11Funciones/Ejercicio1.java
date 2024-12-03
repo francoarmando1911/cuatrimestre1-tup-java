@@ -1,4 +1,7 @@
 package guia11Funciones;
+
+import java.util.Scanner;
+
 /*
 Escriba un menú que contenga las siguientes opciones y programe el pseudocódigo que efectué la acción indicada. Utilice una función para cada ítem del menú.
 1-Multiplicacion de dos números
@@ -8,4 +11,8 @@ Escriba un menú que contenga las siguientes opciones y programe el pseudocódig
 
  */
 public class Ejercicio1 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+    }
 }
