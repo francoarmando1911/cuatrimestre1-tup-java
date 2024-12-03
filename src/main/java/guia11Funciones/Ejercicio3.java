@@ -16,13 +16,23 @@ Utilice una función para determinarlo.
  */
 public class Ejercicio3 {
 
-
+    public static boolean anioBiciesto(int anio){
+        if ((anio % 4 == 0 && anio % 100 !=0) || (anio % 400 == 0)){
+            return true;
+        }else {
+            return false;
+        }
+    }
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Ingrese un año: ");
         int anio = entrada.nextInt();
 
+        if (anioBiciesto(anio)){
+            System.out.println(anio + " es biciesto");
+        }else {
+            System.out.println(anio + " no es biciesto");
+        }
     }
-
 }
