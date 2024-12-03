@@ -4,6 +4,8 @@ Crear  un pseudocódigo que  permita que, ingresando el nombre y el sexo de una 
 buenos días personalizado con ese nombre. Cree una función para que si es mujer agregue “Sra” y si es hombre “Sr.”
 delante del nombre ingresado.
 
+-- APUNTES --
+
 - Funcion sexo (masculino o femenino)
 - En el main pedir que se ingrese el nombre y el sexo
 - Saludo
