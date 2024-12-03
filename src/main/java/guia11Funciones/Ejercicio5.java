@@ -10,10 +10,27 @@ Escriba un algoritmo que calcule el total de la compra utilizando una función q
 
 ---APUNTES---
 
+- Definir una función que determine si un número es par o impar.
+- La función debe aceptar un número como parámetro y devolver un valor booleano:
+    - True si el número es par.
+    - False si el número es impar.
+- En la función principal, calcular el monto de la compra.
+- Convertir el monto de compra a litros utilizando el precio por litro (por ejemplo, dividir el total por el precio por litro).
+- Despreciar la parte decimal de los litros (puede utilizarse la función int() para esto).
+- Si la cantidad de litros es par, calcular el 5% de descuento sobre la compra.
+- Restar el descuento del monto total para obtener el total final a pagar.
+- Imprimir el total de la compra después de aplicar el posible descuento.
  */
 
-
 public class Ejercicio5 {
+
+    public static boolean parOimpar(int numero){
+        if (numero % 2 == 0){
+            return true;
+        }else {
+            return false;
+        }
+    }
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
