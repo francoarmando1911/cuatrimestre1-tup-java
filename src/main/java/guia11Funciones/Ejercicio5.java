@@ -25,16 +25,32 @@ Escriba un algoritmo que calcule el total de la compra utilizando una función q
 public class Ejercicio5 {
 
     public static boolean parOimpar(int numero){
-        if (numero % 2 == 0){
-            return true;
-        }else {
-            return false;
+        return numero % 2 == 0;
+    }
+
+    public static double montoCompra(double monto, double precioPorLitro) {
+        int litros = (int) (monto / precioPorLitro);
+
+        if (parOimpar(litros)) {
+            double descuento = monto * 0.05;
+            return monto - descuento;
         }
+        return monto;
     }
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("prueba");
+        System.out.print("Ingrese el monto de la compra: ");
+        double monto = entrada.nextDouble();
+
+        System.out.print("Ingrese el precio por litro: ");
+        double precioPorLitro = entrada.nextDouble();
+
+        double totalFinal = montoCompra(monto, precioPorLitro);
+
+        System.out.printf("El total de la compra después de aplicar el descuento (si corresponde) es: $%.2f%n", totalFinal);
+
+        entrada.close();
     }
 }
