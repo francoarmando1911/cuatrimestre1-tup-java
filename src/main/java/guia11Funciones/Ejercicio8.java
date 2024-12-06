@@ -38,8 +38,40 @@ Muestra las cifras de los números válidos.
  */
 public class Ejercicio8 {
 
+    public static void separarCifras(int numero){
+        for(char caracter : numero.toCharArray()){
+            System.out.println(caracter);
+        }
+    }
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        String respuesta;
 
+        do {
+            System.out.println("Ingrese un numero (o salir para finalizar): ");
+            respuesta = entrada.next();
+
+            if(entrada.equalsIgnoreCase("salir")){
+                System.out.println("Finalizando el ingreso de numeros...");
+                break;
+            }
+
+            if(esNumero(respuesta)){
+                separarCifras(respuesta);
+            }else {
+                System.out.println("Entrada no valida...");
+            }
+        } while (true);
+        entrada.close();
+    }
+
+    public static boolean esNumero(String entrada) {
+        try {
+            Integer.parseInt(entrada);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 }
