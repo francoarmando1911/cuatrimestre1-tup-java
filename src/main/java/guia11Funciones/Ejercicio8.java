@@ -1,4 +1,7 @@
 package guia11Funciones;
+
+import java.util.Scanner;
+
 /*
 Escriba un pseudocódigo que permita el ingreso de una serie de números que muestre cada una de sus cifras por separado.
 Cree un función que separe y muestre las cifras. Establezca una opción para la finalización del ingreso de la serie.
@@ -34,4 +37,9 @@ Muestra las cifras de los números válidos.
 
  */
 public class Ejercicio8 {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+    }
 }
