@@ -20,7 +20,33 @@ y manejar errores si la entrada no es válida.
  */
 public class Ejercicio10 {
 
+    public static void contarParesEImpares(int numero, int[] contarPares, int[] contarImpares){
+        if (numero % 2 == 0) {
+            contarPares[0]++;
+        } else {
+            contarImpares[0]++;
+        }
+    }
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+
+        int[] contarPares = {0};
+        int[] contarImpares = {0};
+
+        while (true){
+            System.out.println("Ingrese un numero (o un numero negativo para salir): ");
+            int numero = entrada.nextInt();
+
+            if (numero < 0){
+                break;
+            }
+
+            contarParesEImpares(numero, contarPares, contarImpares);
+        }
+
+        System.out.println("Cantidad de numeros pares: " + contarPares[0]);
+        System.out.println("Cantidad de numeros impares: " + contarImpares[0]);
+
+        entrada.close();
     }
 }
