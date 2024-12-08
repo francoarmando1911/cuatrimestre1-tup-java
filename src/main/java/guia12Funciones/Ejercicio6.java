@@ -1,4 +1,4 @@
-package guia11Funciones;
+package guia12Funciones;
 /*
 Escriba un pseudocódigo que nos de el monto final de una compra en pesos argentinos teniendo en cuenta que el
 cliente me puede pagar en pesos Argentinos , pesos Uruguayos y Dolares. El precio de conversión determínelo en

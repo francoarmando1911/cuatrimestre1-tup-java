@@ -1,4 +1,4 @@
-package guia11Funciones;
+package guia12Funciones;
 
 import java.util.Scanner;
 
