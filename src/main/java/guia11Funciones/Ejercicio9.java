@@ -21,8 +21,31 @@ el total de la compra y el número de productos lácteos.
  */
 public class Ejercicio9 {
 
+    public static int calcularCompra(int cantidad, int precio, int tipo){
+
+    }
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
+        do {
+            System.out.println("--SUPERMERCADO--");
+
+            System.out.println("Ingrese el tipo de producto: ");
+            System.out.println("1- Lacteos");
+            System.out.println("2- Carnicos");
+            System.out.println("3- Otro");
+            int tipo = entrada.nextInt();
+
+            switch (tipo){
+                case 1:
+                    System.out.println("Carnico 10%");
+                case 2:
+                    System.out.println("Lacteo 5%");
+                case 3:
+                    System.out.println("Otro nada");
+            }
+
+        }while (true);
     }
 }
