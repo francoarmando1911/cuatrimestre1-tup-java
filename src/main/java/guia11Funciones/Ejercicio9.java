@@ -21,8 +21,13 @@ el total de la compra y el número de productos lácteos.
  */
 public class Ejercicio9 {
 
-    public static int calcularCompra(int cantidad, int precio, int tipo){
+    public static double calcularCompra(double cantidad, double precio, int tipo){
+        if (tipo == 1){
+            double descuentoLacteo = (precio * 0.5f);
+            double descuentoTotalCompra = (descuentoLacteo * cantidad);
+        }
 
+        return descuentoTotalCompra;
     }
 
     public static void main(String[] args) {
@@ -37,11 +42,16 @@ public class Ejercicio9 {
             System.out.println("3- Otro");
             int tipo = entrada.nextInt();
 
+            System.out.println("Ingrese cantidad: ");
+            double cantidad = entrada.nextInt();
+            System.out.println("Ingrese precio: ");
+            double precio = entrada.nextInt();
+
             switch (tipo){
                 case 1:
-                    System.out.println("Carnico 10%");
-                case 2:
                     System.out.println("Lacteo 5%");
+                case 2:
+                    System.out.println("Carnico 10%");
                 case 3:
                     System.out.println("Otro nada");
             }
