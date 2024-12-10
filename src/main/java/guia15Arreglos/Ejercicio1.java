@@ -5,6 +5,10 @@ import java.util.Scanner;
 /*
 Escriba un algoritmo que permita la lectura de 5 números y que muestre los números ingresados en orden inverso al
 que se los ingreso. Utilice un arreglo para la solución del algoritmo.
+
+--APUNTES--
+
+
  */
 public class Ejercicio1 {
 
