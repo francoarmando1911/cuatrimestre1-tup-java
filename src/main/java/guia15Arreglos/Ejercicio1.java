@@ -8,13 +8,18 @@ que se los ingreso. Utilice un arreglo para la solución del algoritmo.
 
 --APUNTES--
 
-
+-Inicializar arreglo de numeros
+-Hacer una funcion para ordenar los numeros de manera inversa
+-En el main pedirle al usuario que ingrese numeros
  */
 public class Ejercicio1 {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
+        System.out.println("Ingrese un numero (o 00 para finalizar): ");
+        int numero = entrada.nextInt()
+;
 
     }
 }
