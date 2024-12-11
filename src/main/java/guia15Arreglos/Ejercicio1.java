@@ -16,10 +16,20 @@ public class Ejercicio1 {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        int[] numeros = new int[5];
 
-        System.out.println("Ingrese un numero (o 00 para finalizar): ");
-        int numero = entrada.nextInt()
-;
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Ingrese un numero (" + (i + 1) + "/5): ");
+            numeros[i] = entrada.nextInt();
+        }
+
+        System.out.println("Los numeros en orden inverso son: ");
+        for (int i = 4; i >= 0; i--) {
+            System.out.println(numeros[i]);
+        }
+
+        entrada.close();
 
     }
+
 }
