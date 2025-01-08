@@ -1,15 +1,28 @@
-package guia15Arreglos;
+package guia15Arreglos;  
 
-import java.util.Scanner;
+import java.util.Scanner;  
 
-/*
-Cree un algoritmo que cargue un arreglo de 5 elementos, invierta su contenido (el contendido del último elemento pasa
-a ser el primero y así sucesivamente) y que muestre el contenido invertido.
- */
-public class Ejercicio3 {
+public class Ejercicio3 {  
 
-    public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+    public static void main(String[] args) {  
+        Scanner entrada = new Scanner(System.in);  
+        String[] elementos = new String[5];  
 
-    }
+        System.out.println("Introduzca 5 elementos:");  
+        for (int i = 0; i < elementos.length; i++) {  
+            System.out.print("Elemento " + (i + 1) + ": ");  
+            elementos[i] = entrada.nextLine();  
+        }  
+
+        String[] elementosInvertidos = new String[elementos.length];  
+        for (int i = 0; i < elementos.length; i++) {  
+            elementosInvertidos[i] = elementos[elementos.length - 1 - i];  
+        }  
+
+        System.out.println("Contenido invertido:");  
+        for (String elemento : elementosInvertidos) {  
+            System.out.println(elemento);  
+        }  
+        entrada.close(); 
+    }  
 }
