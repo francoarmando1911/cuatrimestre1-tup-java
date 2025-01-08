@@ -9,9 +9,7 @@ import java.util.Scanner;
 public class diaAnio {
 
     public static int diasAnio(int respMes){
-
         int dias = 0;
-
         switch (respMes) {
             case 1 :
                 System.out.println("Enero");
