@@ -9,8 +9,6 @@ palabra que utiliza para finalizar para el conteo de palabras ni ningún otro re
 import java.util.Scanner;
 
 public class Ejercicio5 {
-
-
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
@@ -33,6 +31,6 @@ public class Ejercicio5 {
         System.out.println("Cantidad de palabras ingresadas: " + contadorPalabras);
         System.out.println("La palabra mas larga es: " + palabraMasLarga);
 
-
+        entrada.close();
     }
 }

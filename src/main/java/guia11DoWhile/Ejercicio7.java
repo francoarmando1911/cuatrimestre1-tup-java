@@ -37,6 +37,7 @@ public class Ejercicio7 {
             } else {
                 System.out.println("Opcion no valida, intente nuevamente");
             }
+            entrada.close();
         }
     }
 }
