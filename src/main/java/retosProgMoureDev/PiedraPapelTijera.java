@@ -10,10 +10,12 @@
 
 package retosProgMoureDev;
 
+import java.util.Scanner;
+
 public class PiedraPapelTijera {
 
     public static void main(String[] args) {
-        
+        Scanner entrada = new Scanner(System.in);
     }
     
 }
